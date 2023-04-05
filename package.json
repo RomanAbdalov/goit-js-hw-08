@@ -35,5 +35,5 @@
     "webpack-dev-server": "^4.13.2"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "main": "my-bundle.js"
+  "main": "index.js"
 }
