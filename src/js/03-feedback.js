@@ -15,12 +15,22 @@ function storageFormData(element) {
 
 function onFormSubmit(element) {
     element.preventDefault();
+    const {
+        elements: { email, message },
+    } = element.currentTarget;
+
+    if(email.value === '' || message === '') {
+        return alert ('fill all field')
+    
+    };
     console.log(formData);
     element.currentTarget.reset();
     localStorage.removeItem(LOCAL_KEY);
     formData = {};
+    
 };
 
+    
 function reloadPage() {
     if (formData) {
         let { email, message } = form.elements;
