@@ -19,7 +19,7 @@ function onFormSubmit(element) {
         elements: { email, message },
     } = element.currentTarget;
 
-    if(email.value === '' || message === '') {
+    if(email.value === '' || message.value === '') {
         return alert ('fill all field')
     
     };
